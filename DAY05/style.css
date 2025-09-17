@@ -1,0 +1,40 @@
+#body{
+    margin: 100px;
+    margin-left: 250px;
+    background: #000;
+}
+#con{
+    background: firebrick;
+    display: flex;
+    width: 75vw;
+    height: 20vh;
+    border: 1px solid black;
+}
+#gri{
+    display: grid;
+    grid-template-rows: (2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    width: 25vw;
+    border: 2px solid rgb(8, 230, 45);
+
+}
+#nom{
+ width: 25vw;
+ border: 2px solid rgb(255, 255, 255);
+}
+#fle{
+    width: 25vw;
+    display: flex;
+    border: 2px solid rgb(37, 95, 255);
+}
+#box{
+     border: 1px solid rgb(245, 245, 245);
+}
+#part{
+    border: 1px solid rgb(255, 255, 255);
+     width: 50%;
+}
+#no{
+    width: 25vw;
+     border: 1px solid black;
+}

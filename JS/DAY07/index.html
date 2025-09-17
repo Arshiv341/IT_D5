@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #bulb {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: gray;
+    }
+  </style>
+  <script>
+    function colorHandler(color) {
+      let bulb = document.getElementById("bulb");
+      bulb.style.backgroundColor = color;
+      console.log("Bulb color changed to:", color);
+    }
+  </script>
+</head>
+<body>
+  <div id="bulb"></div>
+  <input type="button" value="RED" onclick="colorHandler(value)">
+  <input type="button" value="GREEN" onclick="colorHandler(value)">
+  <input type="button" value="YELLOW" onclick="colorHandler(value)">
+  <input type="button" value="ORANGE" onclick="colorHandler(value)">
+</body>
+</html>

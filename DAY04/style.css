@@ -1,0 +1,35 @@
+#container-box{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    border: 2px solid black;
+    width: 50vw;
+     height:90vh;
+    gap: 1px;
+}
+.box{
+    border: 1px solid brown;
+}
+.box:nth-child(1),.box:nth-child(4){
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    gap: 2px;
+}
+.part{
+    border: 2px solid black;
+}
+#im{
+    width: 100%;
+    padding-top: 2px;
+
+}
+.box:nth-child(2),
+.box:nth-child(3){
+    display: flex;
+    gap: 2px;
+}
+.part-flex{
+    border: 2px solid black;
+    width: 50%;
+}
