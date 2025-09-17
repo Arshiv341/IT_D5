@@ -3,30 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Bulb Control</title>
   <style>
     #bulb {
       width: 150px;
       height: 150px;
       border-radius: 50%;
       background: gray;
+      margin: 20px auto;
+      transition: background 0.3s;
     }
   </style>
   <script>
+    let isON = false; // start OFF
+
     function colorHandler(color) {
       let bulb = document.getElementById("bulb");
-      bulb.style.backgroundColor = color;
-      console.log("Bulb color changed to:", color);
+      if (isON) {
+        bulb.style.backgroundColor = color;
+        console.log("Bulb color changed to:", color);
+      } else {
+        console.log("Bulb is OFF, can't change color.");
+      }
+    }
+
+    function toggleBulb() {
+      let bulb = document.getElementById("bulb");
+      let btn = document.getElementById("toggleBtn");
+
+      if (isON) {
+        // turn OFF
+        bulb.style.backgroundColor = "gray";
+        btn.value = "ON";
+        isON = false;
+        console.log("Bulb turned OFF");
+      } else {
+        // turn ON
+        bulb.style.backgroundColor = "white"; // default ON glow
+        btn.value = "OFF";
+        isON = true;
+        console.log("Bulb turned ON");
+      }
     }
   </script>
 </head>
 <body>
   <div id="bulb"></div>
+
   <input type="button" value="RED" onclick="colorHandler(value)">
   <input type="button" value="GREEN" onclick="colorHandler(value)">
   <input type="button" value="YELLOW" onclick="colorHandler(value)">
   <input type="button" value="ORANGE" onclick="colorHandler(value)">
+  
   <br><br>
-  <input type="button" value="ON">
+  <input type="button" id="toggleBtn" value="ON" onclick="toggleBulb()">
 </body>
 </html>
