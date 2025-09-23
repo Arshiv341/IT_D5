@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Employees SYSTEM "employee.dtd">
+<Employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="employee.xsd">
+
+    <Employee id="EMP101">
+        <Name>Ritik Tiwari</Name>
+        <Department>IT</Department>
+        <BasicSalary>45000</BasicSalary>
+        <Email>ritik123@gmail.com</Email>
+    </Employee>
+
+    <Employee id="HR202">
+        <Name>Arshiv Kumar</Name>
+        <Department>HR</Department>
+        <BasicSalary>30000</BasicSalary>
+        <Email>arshiv202@gmail.com</Email>
+    </Employee>
+
+</Employees>

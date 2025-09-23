@@ -1,0 +1,13 @@
+#navigationbar{
+    display: flex;
+    position: fixed;
+    background-color: black;
+    
+}
+#navigation a:hover{
+    background-color: blue;
+}
+#a{
+    text-decoration: none;
+
+}
